@@ -303,13 +303,15 @@
     </div>
       <div class="subscription">
         <p class="footer-title">Подпишитесь на рассылку</p>
-      <label class="footer-label">
-        <input class="footer-input" type="email" name="mail" placeholder="E-mail">
+      <form autocomplete="off"> 
+        <label class="footer-label">
+        <input class="footer-input" type="email" name="mail" placeholder="E-mail" required>
         <button type="submit" class="button primary" href="">Подписаться
         <svg class="icon" width=24px height=24px>
         <use href="./image/sprite.svg#send"></use></svg>
         </button>
       </label>
+     </form>
       </div>
     </div>
         <!-- <p class="developer">2020 | Developed by GoIT Students</p> -->
@@ -366,13 +368,13 @@
       </div>
       <div class="checkbox-field">
       <label class="checkbox-label">
-        <input class="checkbox" type="checkbox" name="policy">
+        <input class="checkbox" type="checkbox" name="policy" required>
         <span class="checkbox-icon"></span>
         Соглашаюсь с рассылкой и принимаю 
         &nbsp<a href="">Условия договора</a></label>
     </div>
+    <button type="submit" class="button primary">Отправыть</button>
     </form>
-        <button type="submit" class="button primary">Отправыть</button>
       </div>
     </div>
     <script src="./js/modal.js"></script>
